@@ -1,0 +1,157 @@
+.yt-sub
+{
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    border:none;
+    padding:15px;
+    font-weight:550;
+    cursor:pointer;
+
+    transition: background-color 0.5s;
+}
+
+.yt-sub:hover
+{
+    background-color: #d4d4d4;
+}
+
+.yt-join
+{
+    background-color: white;
+    color:blue;
+    height:40px;
+    width: 55px;
+    border-color: blue;
+    border-width: 1px;
+    border-style: solid;
+    margin-right: 8px;
+    cursor:pointer;
+}
+
+.yt-join:hover
+{
+    color:white;
+    background-color: blue;
+}
+
+.tweet
+{
+    background-color: rgb(29,155,240);
+    color: white;
+    height:35px;
+    width: 75px;
+    border:none;
+    border-radius: 25px;
+    font-weight: 550;
+    margin-right: 10px;
+    cursor:pointer;
+
+    /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); */
+    transition: box-shadow 0.25s;
+}
+
+.tweet:hover
+{
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.shadow
+{
+    background-color: rgb(0, 134, 0);
+    color:white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 8px;
+    padding-left: 8px;
+    border:none;
+    cursor: pointer;    
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3); 
+    transition: box-shadow 0.1s;   
+}
+
+.shadow:active
+{    
+    margin-top: 2px;
+    margin-left: 2px;
+    box-shadow: 0px 0px 0px;
+}
+
+.one
+{
+    background-color: rgb(0, 134, 0);
+    color:white; 
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 8px;
+    padding-left: 8px;
+    border:none;
+    cursor: pointer;  
+    transition: padding-right 0.25s, padding-left 0.25s;  
+}
+
+.one:hover
+{
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.two
+{
+    background-color: rgb(0, 134, 0);
+    color:white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 8px;
+    padding-left: 8px;
+    border:none;
+    cursor: pointer;    
+    transition: padding-right 0.25s, padding-left 0.25s;  
+
+}
+
+.two:hover
+{
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.three
+{
+    background-color: rgb(0, 134, 0);
+    color:white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 8px;
+    padding-left: 8px;
+    border:none;
+    cursor: pointer;    
+    transition: padding-right 0.25s, padding-left 0.25s;  
+
+}
+
+.three:hover
+{
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.stretch
+{
+    background-color: rgb(0, 134, 0);
+    color:white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 8px;
+    padding-left: 8px;
+    border:none;
+    cursor: pointer;    
+    transition: padding-right 0.5s, padding-left 0.5s, padding-top 0.5s, padding-bottom 0.5s;
+}
+
+.stretch:hover
+{
+    padding-top:20px;
+    padding-bottom:20px;
+    padding-right:18px;
+    padding-left: 18px;
+}

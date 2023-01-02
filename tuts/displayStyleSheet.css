@@ -1,0 +1,104 @@
+.greet-text
+{
+    width: 200px;
+    display:inline-block;
+    vertical-align: middle;
+}
+
+.yes-button, .no-button
+{
+    vertical-align: middle;
+}
+
+.sign-up
+{
+    display: block;
+    margin-top: 2px;    
+}
+
+.name-input
+{
+    margin-bottom:0px;
+    padding-top: 5px;
+    padding-bottom:5px;    
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    width: 100px;
+}
+
+.email-input
+{
+    margin-top:8px;
+    margin-bottom:0px;
+    padding-top: 5px;
+    padding-bottom:5px;  
+    display:block;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;    
+    width:210px;
+}
+
+.input-button
+{
+    color:white;
+    background-color: blue;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    margin-top:8px;
+    border:none;
+    border-radius: 6px;
+    width:218px;
+    font-weight: bold;
+}
+
+.request-screen-text
+{
+    font-family: Arial;
+    font-size: 20px;
+}
+
+.pickup-location-input, .destination-input
+{
+    display:block;  
+    border:none;
+    background-color: rgb(230, 230, 230);
+    color:rgb(87, 87, 87);  
+    padding: 10px 20px;
+    margin-top:5px;
+    width:300px;
+}
+
+.destination-input
+{
+    margin-bottom:25px;
+}
+
+.request-button
+{
+    border:none;
+    background-color: black;
+    color:white;
+    font-family: Arial;
+    padding-top:12px;
+    padding-bottom: 12px;
+    padding-right: 15px;
+    padding-left:15px;
+    width: 112px;
+    margin-right:12px;
+}
+
+.schedule-button
+{   
+    font-family:Arial;
+    background-color: rgb(230, 230, 230);
+    color:black;
+    border:none;
+    padding-top: 12px;
+    padding-bottom:14px;
+    padding-right:16px;
+    padding-left:16px;
+
+}

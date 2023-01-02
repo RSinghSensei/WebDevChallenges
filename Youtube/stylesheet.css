@@ -1,0 +1,20 @@
+.thumbnail
+{
+    display:block;
+    width:278px;
+}
+
+.search-box
+{
+    display:block;
+    font-size:15px;
+    /* margin-left: 10px;     */
+}
+
+.video-title
+{
+    font-family: Arial;
+    width:278px;
+    font-size: 12px;
+}
+
