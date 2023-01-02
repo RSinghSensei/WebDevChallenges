@@ -18,3 +18,10 @@
     font-size: 12px;
 }
 
+.video-preview
+{
+    width:278px;
+    display:inline-block;
+    vertical-align: top;
+    margin-right: 5px;
+}
