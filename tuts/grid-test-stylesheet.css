@@ -1,0 +1,61 @@
+.recommendation-list
+{
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    column-gap: 20px;
+}
+
+.profile
+{
+    /* width: 250px; */
+}
+
+.profile-dp
+{
+    
+    /* display:block; */
+}
+
+.dp
+{
+    width:250px;
+    height:250px;
+    object-fit: cover;
+    margin-bottom:0px;
+}
+
+.name
+{
+    margin-top:5px;
+    margin-bottom:0px;    
+}
+
+.first-mutual-and-number
+{
+    display:grid;
+    grid-template-columns: 25px 1fr;
+}
+
+.number-of-mutuals
+{
+    /* vertical-align: top; */
+    margin-top:5px;
+    margin-left:5px;
+}
+
+.mutual-friend-dp
+{
+    width:100%;
+    border-radius: 50%;
+}
+
+.add-friend-button
+{
+    display: block;
+}
+
+.grid
+{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
