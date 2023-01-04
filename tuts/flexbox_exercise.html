@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+
+    <link rel = "stylesheet" href = "flexbox_stylesheet.css">
+</head>
+<body>
+    <div class = "flex-1" style = "display: flex; flex-direction: row;">
+        <div class = "div-1">div 1 lol lol</div>
+        <div class = "div-2">div 2</div>
+    </div>
+
+    <div class = "flex-2" style = "margin-top:10px; display: flex; flex-direction: row;">
+        <div class = "div-1" style = "width:100px;">100px</div>
+        <div class = "div-2" style = "flex:1;">flex 1</div>
+        <div class = "div-1" style = "flex:2">flex 2</div>
+    </div>
+
+    <div class = "flex-3" 
+    style = " 
+            height: 70px; border-width: 1px;
+            border-style: solid; border-color: gray; margin-top:10px; 
+            display: flex; flex-direction: row;">
+        <div class = "div-1" style = "width:100px;">100px</div>
+        <div class = "div-2" style = "width:100px">100px</div>
+        <div class = "div-1" style = "width:100px">100px</div>
+    </div>
+
+    <div class = "flex-4" 
+    style = " 
+            height: 70px; border-width: 1px;
+            border-style: solid; border-color: gray; margin-top:10px; 
+            display: flex; flex-direction: row; justify-content: space-between;" >
+        <div class = "div-1" style = "width:100px;">100px</div>
+        <div class = "div-2" style = "width:100px">100px</div>
+        <div class = "div-1" style = "width:100px">100px</div>
+    </div>
+    
+    <div class = "flex-5" 
+    style = " 
+            height: 70px; border-width: 1px;
+            border-style: solid; border-color: gray; margin-top:10px; 
+            display: flex; flex-direction: row; justify-content: space-between;
+            align-items: center;" >
+        <div class = "div-1" style = "width:100px;">100px</div>
+        <div class = "div-2" style = "width:100px">100px</div>
+        <div class = "div-1" style = "width:100px">100px</div>
+    </div>
+
+    <div class = "flex-6" 
+    style = " 
+            height: 50px; border-width: 1px;
+            border-style: solid; border-color: gray; margin-top:10px; 
+            display: flex; flex-direction: row; justify-content:space-between; 
+            align-items: center;" >
+            <div style = "background-color: lawngreen; text-align: left ;">
+                item 1
+            </div>
+            <div style = "background-color: aquamarine;" >item2</div>
+            </div>
+
+    <br>
+
+    <div class = "flex-7" style = "display: flex; flex-direction: row;">
+        <div style = "background-color:aquamarine; width:200px">200px</div>
+        <div style = "background-color:pink; width:200px">00px</div>
+    </div>
+    <br>
+
+    <div class = "flex-8" style = "display: flex; flex-direction: row;">
+        <div style = "background-color: aquamarine; width: 50px">50px</div>
+        <div style = "background-color: pink; flex: 1">flex</div>
+        <div style = "background-color: aquamarine; width: 75px">75px</div>
+    </div>
+
+    <div class = "flex-9" style = "display: flex; flex-direction: row; justify-content: space-between;">
+        <div style = "background-color: aquamarine;">50px</div>
+        <div style = "background-color: pink;">flex</div>
+        <div style = "background-color: aquamarine">75px</div>
+        <div style = "background-color: aquamarine">75px</div>
+    </div>
+
+    <br>
+
+    <div class="user-box">
+        <div class="home-feed-notif">
+            <div class = "home-key">Home</div> <div class = "number-notif">14</div>
+        </div>
+        <div class="user-notifs">
+            <div class = "notifcation-key">Notifications</div><div class = "number-notif">3</div>
+        </div>
+        <div class="direct-messages">
+            <div class = "messages-key">Messages</div> <div class = "number-notif">5</div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="search-bar">
+        <div class="home-nav">
+            Home
+        </div>
+        <div class="search-function">
+            <input class = "search-input" type = "text" placeholder="Search">
+        </div>        
+        <div class="download-button">
+            <button class = "download" type = "button">Download</button>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="recommended-follow-list">
+        <div class="profile">
+            <div class="dp">
+                <img class = "dp-src" src = "../Youtube/thumbnail-images/cutecatdp.jpg">
+            </div>
+            <div class="name-title-popular">
+                <p class = "name-tag">oliver</p>
+                <p class = "title-tag">the cat</p>
+                <p class = "popular-tag">Popular</p>
+            </div>
+            <div class="follow-button">
+                <button class = "follow-button-tag" type = "button">Follow</button>
+            </div>
+        </div>
+
+        <div class="profile">
+            <div class="dp">
+                <img class = "dp-src" src = "../Youtube/thumbnail-images/cat-2.webp">
+            </div>
+            <div class="name-title-popular">
+                <p class = "name-tag">Mimi</p>
+                <p class = "title-tag">Sleepy Cat</p>
+                <p class = "popular-tag">Popular</p>
+            </div>
+            <div class="follow-button">
+                <button class = "follow-button-tag" type = "button">Follow</button>
+            </div>
+        </div>
+
+        <div class="profile">
+            <div class="dp">
+                <img class = "dp-src" src = "../Youtube/thumbnail-images/cat-3.jpg">
+            </div>
+            <div class="name-title-popular">
+                <p class = "name-tag">Rex</p>
+                <p class = "title-tag">Happy Bulldog</p>
+                <p class = "popular-tag">Popular</p>
+            </div>
+            <div class="follow-button">
+                <button class = "follow-button-tag" type = "button">Follow</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

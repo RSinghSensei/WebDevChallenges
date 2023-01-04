@@ -1,12 +1,50 @@
+body
+{
+    margin:0;
+}
+
 .thumbnail
 {
     display:block;
     width:100%;
 }
 
+.header-bar
+{
+    display:flex;
+    flex-direction: row;
+    border:none;
+    background-color:black;
+    height:100px;
+    justify-content: space-between;
+    
+}
+
+.left-section
+{
+    width:150px;
+    background-color: red;
+}
+
+.middle-section
+{
+    flex: 1;
+    background-color: white;
+    margin-left:100px;
+    margin-right:75px;
+    max-width:1200px;    
+}
+
+.right-section
+{
+    background-color: brown;
+    color:white;
+    width:250px;
+}
+
 .search-box
 {
-    display:block;
+    /* display:block; */
     font-size:15px;
     /* margin-left: 10px;     */
 }

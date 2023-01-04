@@ -1,0 +1,161 @@
+div
+{
+    font-family: Arial;
+}
+
+.user-box
+{
+    border:solid;
+    border-radius: 5px;
+    border-color: gray;
+    border-width: 1px;
+    width:400px;
+}
+
+.home-feed-notif, .user-notifs, .direct-messages
+{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.number-notif
+{
+    border:none;
+    background-color: rgb(61, 61, 255);
+    color:white;
+    border-radius: 9px;    
+    padding:2px 8px;
+}
+
+.home-feed-notif
+{
+    margin-top:5px;
+    margin-bottom: 10px;
+}
+
+.user-notifs
+{
+    margin-bottom:10px;
+}
+
+.direct-messages
+{
+    margin-bottom:5px;
+}
+
+.search-bar
+{
+    display:flex;
+    flex-direction: row;
+    background-color: rgb(126, 34, 145);    
+    height:50px;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    justify-content: space-between;
+    width: 800px;
+}
+
+.home-nav
+{
+    color:white;
+    margin-left:10px;
+    font-weight: bold;
+}
+
+.search-function
+{
+    width: 310px;
+}
+
+.search-input
+{
+    border:none;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.download-button
+{
+    margin-right: 10px;    
+}
+
+.download
+{
+    color:white;
+    background: none;
+    border-width: 1px;
+    border-color: white;
+    padding: 5px 10px;
+}
+
+.profile
+{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    width: 300px;
+}
+
+.dp
+{
+    width: 50px;
+    margin-bottom: 12px;
+    /* width:50px; */
+}
+
+.dp-src
+{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.name-title-popular
+{
+    width:150px;
+    font-family: Arial;
+    margin-left:10px;
+}
+
+.name-tag
+{
+    margin-top:0px;
+    margin-bottom:0px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.title-tag
+{
+    margin-top: 5px;
+    color:gray;
+    margin-bottom:0px;
+}
+
+.popular-tag
+{
+    margin-top:5px;
+    color:gray;
+    font-size: 13px;
+}
+
+.follow-button
+{
+    width:100px;
+    margin-bottom: 15px;
+}
+
+.follow-button-tag
+{
+    font-size: 15px;
+    font-weight: bold;
+    color:white;
+    background-color:rgb(107, 107, 252);
+    border-radius: 2px;
+    border: none;    
+    padding: 10px 10px;
+}
