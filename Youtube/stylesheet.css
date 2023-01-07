@@ -152,6 +152,27 @@ body
     width:25px;
 }
 
+.notification-div
+{
+    position:relative;
+    z-index: 0;
+}
+
+.notification-count
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    background-color: rgb(206, 0, 0);
+    position:absolute;  
+    border-radius: 50%;
+    padding-right:5px;
+    padding-left:5px;
+    padding-top:2px;
+    padding-bottom:2px;
+    top:-1px;
+    right:-5px;
+}
+
 .notifications
 {
     width:25px;
@@ -194,6 +215,28 @@ body
     margin-bottom:0px;
     width:100%;
     margin-right: 5px;
+}
+
+.video-thumbnail
+{
+    position:relative;
+    z-index: -1;
+}
+
+.video-time
+{
+    position:absolute;
+    bottom:10px;
+    right:10px;
+    background-color: black;
+    color:white;
+    padding-right:5px;
+    padding-left:5px;
+    padding-bottom:5px;
+    padding-top:5px;
+    font-weight: bold;
+    border-radius: 2px;
+
 }
 
 .video-meta
