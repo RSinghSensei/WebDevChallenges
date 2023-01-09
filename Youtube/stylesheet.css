@@ -1,8 +1,16 @@
 body
 {
     margin-bottom:200px;
-    padding-top:100px;
-    padding-left:100px;
+    padding-top:80px;
+    padding-left:80px;
+    padding-right:20px;
+    background-color: rgb(247, 247, 247);
+}
+
+a
+{
+    color:black;
+    text-decoration: none;
 }
 
 .thumbnail
@@ -25,6 +33,7 @@ body
     top:0;
     right:0;
     left:0;
+    z-index: 10;
     
 }
 
@@ -36,32 +45,65 @@ body
     left:0;
     bottom:0;
     top:60px;
-    background-color: lightblue;
+    background-color: rgb(255, 255, 255);
     width:70px;
+    z-index: 20;
+}
+
+.sidebar-container
+{
+    height:74px;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* margin-bottom:0px; */
+    cursor: pointer;
+    transition: background-color 0.15s
+}
+
+.sidebar-container:hover
+{
+    background-color: rgb(161, 161, 161);
+}
+
+.sidebar-container img
+{
+    width:25px;
+}
+
+.sidebar-container div
+{
+    margin-top:5px;
+    font-family: Roboto;
+    font-size: 10px;
+
 }
 
 .home-button, .explore-button, .subscriptions-button, .originals-button, .youtube-music-button, .library-button
 {
-    height:25px;
+    /* height:25px; */
     /* margin-bottom:25px; */
 }
 
 .home-button
 {
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 
 .left-section
 {
     display: flex;    
-    margin-left: 30px;
-    align-items: center;
+    margin-left: 23px;
+    align-items: center;    
 }
 
 .hamburger-menu-icon
 {
     height:25px;
     margin-right: 25px;
+    margin-bottom: 2px;
+    cursor: pointer;
 }
 
 .youtube-home-logo
@@ -88,7 +130,7 @@ body
     height: 36px;
     border-style: solid;
     border-width: 1px;
-    border-color: gray;
+    border-color: rgb(206, 206, 206);
     color:rgb(112, 112, 112);
     border-radius:2px;
     padding-left:15px;
@@ -101,10 +143,12 @@ body
     width: 65px;
     margin-left:-1px;
     border-width: 1px;
-    border-color:gray;
+    border-color:rgb(206, 206, 206);
+    background-color: rgb(247, 247, 247);
     border-style: solid;
     border-radius: 0 2px 2px 0; 
     margin-right:10px;
+    cursor: pointer;
 }
 
 .voice-search-button
@@ -115,9 +159,15 @@ body
     border-radius: 25px;
     padding-right: 5px;
     padding-left: 5px;
-
-    
+    transition: background-color 0.15;
+    cursor: pointer;
 }
+
+.voice-search-button:hover
+{
+    background-color: rgb(212, 212, 212);
+}
+
 
 
 .search-function
@@ -140,6 +190,46 @@ body
     justify-content:space-between;
     margin-right: 20px;
     flex-shrink: 0;
+}
+
+.upload-container, .google-apps-container, .notification-div, .search-button, .voice-search-button
+{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.upload-container .tooltip,
+.google-apps-container .tooltip,
+.notification-div .tooltip,
+.search-button .tooltip,
+.voice-search-button .tooltip
+{
+    font-family: Roboto;
+    font-size: 12px;
+    color:white;
+    background-color: rgba(126, 125, 125, 0.9);
+    position:absolute;
+    bottom:-47px;    
+    /* padding: 3px 5px; */
+    opacity: 0;
+    white-space: nowrap;
+    transition: opacity 0.15s;
+    border-radius: 4px;
+    padding: 8px 5px;
+    pointer-events: none;
+}
+
+.upload-container:hover .tooltip,
+.google-apps-container:hover .tooltip,
+.notification-div:hover .tooltip,
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip
+{
+    opacity: 1;
+
 }
 
 .upload-video
@@ -184,11 +274,20 @@ body
     height:35px;
     border-radius: 50%;
 }
-.search-box
+.search-box[type = text]
 {
     /* display:block; */
     font-size:15px;
     /* margin-left: 10px;     */
+}
+
+.search-box[type = text]:focus
+{
+    /* border-style: solid; */
+    /* border-color: rgb(61, 61, 255); */
+    /* border-width: 1px; */
+    outline-color: rgb(117, 117, 252);
+    outline-width: 1px;
 }
 
 .main-page-recommendations
@@ -196,7 +295,7 @@ body
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap:15px;
-    row-gap:50px;
+    row-gap:30px;
 }
 
 .video-title
@@ -220,7 +319,7 @@ body
 .video-thumbnail
 {
     position:relative;
-    z-index: -1;
+    z-index: 0;
 }
 
 .video-time
@@ -235,6 +334,8 @@ body
     padding-bottom:5px;
     padding-top:5px;
     font-weight: bold;
+    font-size: 12px;
+    font-family: Roboto;
     border-radius: 2px;
 
 }
@@ -251,11 +352,78 @@ body
     vertical-align: top;
 }
 
+.channel-info-link
+{
+    position: relative;
+}
+
+.channel-info-link .channel-banner-link
+{
+    display:flex; 
+    /* justify-content: center; */
+    /* align-items: center;    */
+    /* display:inline-block; */
+    background-color: white;
+    box-shadow:1px 0px 10px rgb(25, 25, 34);
+    position:absolute;
+    padding-right:20px;
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-left:10px;
+    bottom:-75px;
+    border-radius: 5px;  
+    opacity:0;
+    transition: opacity 0.5s;     
+    pointer-events: none;    
+}
+
+.channel-info-link:hover .channel-banner-link
+{
+    opacity: 1;
+}
+
+.banner-display-pic
+{
+    width:50px;
+    height:50px;
+    border-radius: 50%;   
+    object-fit: contain;
+    margin-right:5px;
+}
+
+.channel-detes
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.banner-channel-name
+{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.banner-channel-no-subscribers
+{
+    font-family: Roboto;
+    margin-top:3px;
+    font-size:14px;
+    color:rgb(75, 75, 75);
+    white-space: nowrap;
+
+}
+
+
 .display-pic
 {
-    width:100%;
-    border-radius: 50%;
+    width:35px;
+    border-radius: 50%;    
 }
+
+
 
 .video-details
 {    
