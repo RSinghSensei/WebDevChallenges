@@ -1,7 +1,20 @@
+body
+{
+    margin:0;
+}
 .home-page
 {
     padding:45px 50px;
+    /* min-width: 800px; */
     /* margin: 0 auto; */
+}
+
+@media (max-width:900px)
+{
+    .home-page
+    {
+        padding:10px 10px
+    }
 }
 
 /*Title and Navigation*/
@@ -26,6 +39,7 @@
     font-size: 36px;
 }
 
+
 .nav-container
 {
     display:flex;
@@ -33,6 +47,20 @@
     font-family: "Poppins";
     font-weight:500;
     font-size:24px;
+}
+
+@media (max-width:900px)
+{
+    .title
+    {
+        font-size: 24px;
+    }    
+
+    .nav-container
+    {
+        font-size: 16px;
+    }
+
 }
 
 
@@ -129,6 +157,35 @@
     overflow:visible;
 }
 
+@media (max-width: 900px)
+{
+    .intro-content-p-1, .intro-content-2-p-2
+    {
+        font-size: 12px;
+    }
+
+    .intro-content-p-2, .intro-content-2-p-1
+    {
+        font-size: 24px;
+    }   
+
+    .intro-content-3-p-1
+    {
+        font-size: 10px;
+    }
+
+    .email-input-form-button, .email-input-form
+    {
+        font-size:14px;
+    }
+
+    .intro-content p,
+    .intro-content input
+    {
+        margin-left: 0;    
+    }
+}
+
 /*Services Content*/
 .services-content
 {
@@ -207,6 +264,25 @@
     border-radius: 18px;   
 }
 
+@media (max-width: 900px)
+{
+    .services-title
+    {
+        font-size: 24px;
+    }
+
+    .services-options-container
+    {
+        flex-direction: column;        
+    }
+
+    .services-content, .services-options-container
+    {
+        margin:0;
+    }
+
+}
+
 /*Material icons*/
 
 .material-symbols-outlined
@@ -239,6 +315,7 @@
     /* margin-left:10%; */
 }
 
+
 .--content-style-type
 {
     font-weight: 300;
@@ -258,6 +335,7 @@
     display:flex;
     margin:0 auto;
     gap: 20px;
+    /* overflow: hidden; */
     /* margin: 0 10%; */
     /* gap:20px; */
     /* justify-content: space-evenly;     */
@@ -281,8 +359,8 @@
 
 .content-image
 {
-    width:100%;
-    height:100%;
+    width:500px;
+    height:500px;
     object-fit: contain;
     border-radius: 12px;
 }
@@ -294,6 +372,51 @@
     color:#2d9cbd;
     align-self: flex-end;
     margin-right: 20%;
+}
+
+@media (max-width: 900px)
+{
+    .design-styles-content-title
+    {
+        font-size: 24px;
+    }
+
+    .--content-style-type
+    {
+        font-size: 12px;
+    }
+
+    .--content-title
+    {
+        font-size: 18px;
+    }
+
+    .design-styles-content
+    {
+        margin:0;
+    }
+
+    .design-styles-grid
+    {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .design-styles-flex-1
+    {
+        padding-top:0;
+    }
+
+    .see-more-redirect-container
+    {
+        font-size: 18px;
+    }
+
+    .content-image
+    {
+        width: 350px;
+        height:350px;
+    }
 }
 
 /*Team Content*/
@@ -363,6 +486,7 @@
 {
     width:290px;
     height:290px;
+    object-fit: contain;
 }
 
 .second-picture-container
@@ -376,6 +500,43 @@
 {
     width:240px;
     height:240px;
+    object-fit: contain;
+}
+
+@media (max-width:900px)
+{
+    .team-content
+    {
+        flex-direction: column;
+        margin: 0;
+        align-items: flex-start;
+    }
+
+    .team-description
+    {
+        align-self: flex-start;
+    }
+
+    .team-picture-container
+    {
+        width:100%;
+    }
+
+    .first-container-image, .second-container-image-2
+    {
+        width:140px;
+        height:140px;
+        object-fit: contain;
+    }
+    .second-container-image-1
+    {
+        width:140px;
+        height:140px;
+        object-fit: contain;
+    }
+
+
+    
 }
 
 /*Company Quote*/
@@ -434,6 +595,19 @@
     flex-direction: column;
 }
 
+@media (max-width: 900px)
+{
+    .company-quote-content
+    {
+        font-size: 24px;
+    }
+
+    .company-quote
+    {
+        margin-bottom: 100px;
+    }
+}
+
 /*Footer Content*/
 .footer-content
 {
@@ -443,6 +617,7 @@
     background-color: #100E1D;
     color:white;
     justify-content: space-evenly;    
+    width:100%;
 }
 
 .footer-nav-container
@@ -465,4 +640,11 @@
     font-size:14px;
 }
 
-
+@media (max-width: 900px)
+{
+    .footer-content
+    {
+    flex-direction: column;
+    padding: 36px 44px;
+    }
+}
